@@ -1,0 +1,278 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>SAVISKARA '18</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+  <!-- Fonts -->
+  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="css/animate.css" rel="stylesheet" />
+  <!-- Squad theme CSS -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="color/default.css" rel="stylesheet">
+
+
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+  <!-- Preloader -->
+  <div id="preloader">
+    <div id="load"></div>
+  </div>
+
+  <nav class="navbar navbar-custom navbar-fixed-top" role="navigation" style="background: #FF9900;">
+    <div class="container" style="background: #FF9900;">
+      <div class="navbar-header page-scroll">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+        <a class="navbar-brand" href="index.html">
+          <h1><img src="img/logo-white.png" height="30" style="margin-top:-3px;"> SAVISKARA</h1>
+        </a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active" style="background: #FF9900;"><a href="#intro">Home</a></li>
+          <li><a href="#about" style="background: #FF9900;">Events</a></li>
+          <li><a href="#contact" style="background: #FF9900;">Registration</a></li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+  </nav>
+
+  <!-- Section: intro -->
+  <section id="intro" class="intro" style="background-image: url('img/capture.png');">
+
+    <div class="slogan">
+      <h2>SAVISKARA '18 </h2>
+      <h4>March 9th And 10th</h4><br>
+      <!-- Display the countdown timer in an element -->
+<p id="demo" style="color:#FFF; font-size: 50px; font-weight: 900 ; "></p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("March 9, 2018 09:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now an the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+    </div>
+    <div class="page-scroll">
+      <a href="#about" class="btn btn-circle">
+				<i class="fa fa-angle-double-down animated"></i>
+			</a>
+    </div>
+  </section>
+  <!-- /Section: intro -->
+
+  <!-- Section: about -->
+  <section id="about" class="home-section text-center" style="color :#FFF; background-image: url('img/1_zQCFvxQQs4YUHYsaOuU6yg.jpeg'); background-position: fixed;">
+    <div class="heading-about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <div class="wow bounceInDown" data-wow-delay="0.4s">
+              <div class="section-heading">
+                <h2>EVENTS</h2>
+                <i class="fa fa-2x fa-angle-down"></i>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-2 col-lg-offset-5">
+                  <hr class="marginbot-50">
+              </div>
+          </div>
+          <div class="row">
+              <center>
+                  <div style="width: 75%; font-family: 'comic sans ms'; font-size: 45px;" class="col-lg-2">9th March</div>
+                  <div class="row" style="width:100%">
+                      <div class="col-md-3">
+                          <div class="wow bounceInUp" data-wow-delay="0.2s">
+                              <div class="team boxed-grey" style="background: rgba(0,0,0,0)">
+                                  <div class="inner">
+                                      <h5>Technical Events</h5>
+                                      <p class="subtitle">Mini Hackathon</p>
+                                      <p class="subtitle">Tech Quiz</p>
+                                      <p class="subtitle">Ideate</p>
+                                      <p class="subtitle">Paper Presentation</p>
+                                      <p class="subtitle">Jumble Code</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-3">
+                          <div class="wow bounceInUp" data-wow-delay="0.5s">
+                              <div class="team boxed-grey" style="background: rgba(0,0,0,0)">
+                                  <div class="inner">
+                                      <h5>Recreational Events</h5>
+                                      <p class="subtitle">Counter Strike</p>
+                                      <p class="subtitle">Need For Speed</p>
+                                      <p class="subtitle">Mini Militia</p>
+                                      <p class="subtitle">Hogathon</p>
+                                      <p class="subtitle">Online Photography</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-3">
+                          <div class="wow bounceInUp" data-wow-delay="0.8s">
+                              <div class="team boxed-grey" style="background: rgba(0,0,0,0)">
+                                  <div class="inner">
+                                      <h5>Sports</h5>
+                                      <p class="subtitle">Tug Of War</p>
+                                      <p class="subtitle">Slow Bike Race</p>
+                                      <p class="subtitle">Volleyball</p>
+                                      <p class="subtitle">Throwball</p>
+                                      <p class="subtitle">Gully Cricket</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+           <div style="width: 100%; font-family: 'comic sans ms'; font-size: 45px;" class="col-lg-2">10th March</div>
+           <div class="row" style="width:100%">
+                      <div class="col-md-3">
+                          <div class="wow bounceInUp" data-wow-delay="1s">
+                              <div class="team boxed-grey" style="background: rgba(0,0,0,0)">
+                                  <div class="inner">
+                                      <h5>Cultural Events</h5>
+                                      <p class="subtitle">Rangoli</p>
+                                      <p class="subtitle">Solo Dance</p>
+                                      <p class="subtitle">Solo Singing</p>
+                                      <p class="subtitle">Nail Art</p>
+                                      <p class="subtitle">Poster Making</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+          </div>
+</center>
+      </div>
+  </section>
+  <!-- Section: contact -->
+  <section id="contact" class="home-section text-center">
+    <div class="heading-contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <div class="wow bounceInDown" data-wow-delay="0.4s">
+              <div class="section-heading">
+                <h2>Registrations</h2>
+                <i class="fa fa-2x fa-angle-down"></i>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+
+
+<div class="row">
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSflleCe0eJq2yrGKei8qHpzIdOmybbEuVcQs6QOpT3UJH5o0g/viewform?embedded=true" width="100%" height="550" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe></div>
+
+<br><br>
+        <div class="col-lg-4">
+          <div class="widget-contact">
+            <h5>Main Office</h5>
+
+            <address>
+				  <strong>School Of C&IT</strong><br>
+				  Reva University, Rukmini Knowledge Park<br>
+				  Katigenhalli, Yelahanka, 560064<br>
+				</address>
+
+            <address>
+				  <strong>We're on social networks</strong><br>
+                       	<ul class="company-social">
+                            <li class="social-facebook"><a href="https://www.facebook.com/SCHOOL.C.IT/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                            <li class="social-insta"><a href="https://www.instagram.com/reva_university/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+				</address>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- /Section: contact -->
+
+  <footer style="background: #FF9900;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-lg-12">
+          <div class="wow shake" data-wow-delay="0.4s">
+            <div class="page-scroll marginbot-30">
+              <a href="#intro" id="totop" class="btn btn-circle">
+							<i class="fa fa-angle-double-up animated"></i>
+						</a>
+            </div>
+          </div>
+          <p>&copy;RACIT. All rights reserved.</p>
+          <div class="credits">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Core JavaScript Files -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.min.js"></script>
+  <script src="js/jquery.scrollTo.js"></script>
+  <script src="js/wow.min.js"></script>
+  <!-- Custom Theme JavaScript -->
+  <script src="js/custom.js"></script>
+  <script src="contactform/contactform.js"></script>
+
+</body>
+
+</html>
