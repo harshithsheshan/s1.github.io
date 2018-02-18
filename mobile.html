@@ -18,12 +18,23 @@
   <!-- Squad theme CSS -->
   <link href="css/style.css" rel="stylesheet">
   <link href="color/default.css" rel="stylesheet">
-
+  
+  <style>
+      .info {
+          position:relative;
+          z-index:2;
+          background:#FF9900;
+          color:#FFF;
+          font-size:16px;
+          width:80%;
+          border-radius:5px;
+      }
+  </style>
 
 
 </head>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+<body id="page-top" data-spy="scroll" data-target=".navbar-custom" onload="hideve()">
   <!-- Preloader -->
   <div id="preloader">
     <div id="load"></div>
@@ -45,7 +56,7 @@
         <ul class="nav navbar-nav">
           <li class="active" style="background: #FF9900;"><a href="#intro">Home</a></li>
           <li><a href="#about" style="background: #FF9900;">Events</a></li>
-          <li><a href="#contact" style="background: #FF9900;">Registration</a></li>
+          <li><a href="#contact" style="background: #FF9900;">Contact Us</a></li>
         </ul>
       </div>
       <!-- /.navbar-collapse -->
@@ -101,6 +112,7 @@ var x = setInterval(function() {
   </section>
   <!-- /Section: intro -->
 
+    <script src="sdgfdsgasf.js">    </script>
   <!-- Section: about -->
   <section id="about" class="home-section text-center" style="color :#FFF; background-image: url('img/1_zQCFvxQQs4YUHYsaOuU6yg.jpeg'); background-position: fixed;">
     <div class="heading-about">
@@ -133,11 +145,47 @@ var x = setInterval(function() {
                               <div class="team boxed-grey" style="background: rgba(0,0,0,0)">
                                   <div class="inner">
                                       <h5>Technical Events</h5>
-                                      <p class="subtitle">Mini Hackathon</p>
-                                      <p class="subtitle">Tech Quiz</p>
-                                      <p class="subtitle">Ideate</p>
-                                      <p class="subtitle">Paper Presentation</p>
-                                      <p class="subtitle">Jumble Code</p>
+                                      <p class="subtitle" onclick="show1()">Mini Hackathon</p>
+                                      <p id="1" class="info" style="height: :800px"><strong>Mini Hackathon</strong>
+                                        <br>
+                                      This is a team participation hackathon. You can have at most 2 members in your team.
+You can either invite your friends to form a team or you can request other teams to add you as a member.
+The hackathon will start at 26-11-2016 11:30 AM and end at 27-11-2016 11:30 AM, you work on your hack during the allotted time only.
+                                      
+                                      </p>
+                                      <p class="subtitle" onclick="show2()">Tech Quiz</p>
+                                      <p id="2" class="info"  style="height: :800px"><strong>Tech Quiz</strong>
+                                        <br>
+                                      Each team has shall consist of a maximum of 2 persons.
+the decision of the quiz aster will be final and will not be up for debate.
+scrap or rought sheets and pencil can be carried by participants
+points are cumulative
+                                      </p>
+                                      <p class="subtitle" onclick="show3()">Ideate</p>
+                                      <p id="3" class="info" style="height: :800px"><strong>Ideate</strong>
+                                      <br>
+                                      “Ideation is the mode of the design process in which you concentrate on idea generation. Mentally it represents a process of ‘going wide’ in terms of concepts and outcomes. Ideation provides both the fuel and also the source material for building prototypes and getting innovative solutions into the hands of your users.”
+
+                                      </p>
+                                      <p class="subtitle" onclick="show4()">Paper Presentation</p>
+                                      <p id="4" class="info" style="height: :800px"><strong>Paper Presentation</strong>
+                                      <br>
+                                      Maximum number of participants in a Team is 2.
+Abstract should not exceed 1 page and Paper. should not exceed 15 pages.
+The subject of the mail with the attached abstract and later, the final paper should be the domain and sub-category under which the paper is categorized.
+Bring your college I-Card & receipt on event day.
+Please bring your PowerPoint presentation on a CD and on a pen-drive.
+Soft-copies of the submitted paper and PowerPoint presentations must be in the .docx format.
+                                      </p>
+                                      <p class="subtitle" onclick="show5()">Jumble Code</p>
+                                      <p id="5" class="info" style="height: :800px"><strong>Jumble Code</strong>
+                                      <br>
+                                      a jumbled set of a c program will be given to the participant.
+the participant must rearrange the statements in order to generate logically anfd syntactically correct program.
+judges decision will be final and no debates will be encouraged
+the event coordinator holds the authority to change the rules at any point of time
+                                      </p>
+
                                   </div>
                               </div>
                           </div>
@@ -147,11 +195,35 @@ var x = setInterval(function() {
                               <div class="team boxed-grey" style="background: rgba(0,0,0,0)">
                                   <div class="inner">
                                       <h5>Recreational Events</h5>
-                                      <p class="subtitle">Counter Strike</p>
-                                      <p class="subtitle">Need For Speed</p>
-                                      <p class="subtitle">Mini Militia</p>
-                                      <p class="subtitle">Hogathon</p>
-                                      <p class="subtitle">Online Photography</p>
+                                      <p class="subtitle" onclick="show6()">Counter Strike</p>
+                                      <p id="6" class="info" style="height: :800px"><strong>Counter Strike</strong>
+                                        <br>
+                                        It is a series of multi-player first person shooter video games, in which teams of terrorists battle to perpetrate an act of terror and counter terrorists try to prevent it.
+
+                                      </p>
+                                      <p class="subtitle" onclick="show7()">Need For Speed</p>
+                                      <p id="7" class="info" style="height: :800px"><strong>Need For Speed</strong>
+                                        <br>
+                                        The series centers around illicit street racing and in general tasks players to complete various types of races while evading the local law enforcement in police pursuits.
+
+                                      </p>
+                                      <p class="subtitle" onclick="show8()">Mini Militia</p>
+                                      <p id="8" class="info" style="height: :800px"><strong>Mini Militia</strong>
+                                        <br>
+
+
+                                      </p>
+                                      <p class="subtitle" onclick="show9()">Hogathon</p>
+                                      <p id="9" class="info" style="height: :800px"><strong>Hogathon</strong>
+                                        <br>
+                                        It is a team event and the team will be of 2 persons.All necessary materials will be provided.
+One will eat and the other will serve in pair. The one who eats in Round-1 will continue to eat till the last round. The person should finish eating the given stuffs in the given amount of time only then the team will be qualified for the Round-2
+
+                                      </p>
+                                      <p class="subtitle" onclick="show10()">Online Photography</p>
+                                      <p id="10" class="info" style="height: :800px"><strong>Online Photography</strong>
+
+                                      </p>
                                   </div>
                               </div>
                           </div>
@@ -161,11 +233,26 @@ var x = setInterval(function() {
                               <div class="team boxed-grey" style="background: rgba(0,0,0,0)">
                                   <div class="inner">
                                       <h5>Sports</h5>
-                                      <p class="subtitle">Tug Of War</p>
-                                      <p class="subtitle">Slow Bike Race</p>
-                                      <p class="subtitle">Volleyball</p>
-                                      <p class="subtitle">Throwball</p>
-                                      <p class="subtitle">Gully Cricket</p>
+                                      <p class="subtitle" onclick="show11()">Tug Of War</p>
+                                      <p id="11" class="info" style="height: :800px"><strong>Tug Of War</strong>
+
+                                      </p>
+                                      <p class="subtitle" onclick="show12()">Slow Bike Race</p>
+                                      <p id="12" class="info" style="height: :800px"><strong>Slow Bike Race</strong>
+
+                                      </p>
+                                      <p class="subtitle" onclick="show13()">Volleyball</p>
+                                      <p id="13" class="info" style="height: :800px"><strong>Volleyball</strong>
+
+                                      </p>
+                                      <p class="subtitle" onclick="show14()">Throwball</p>
+                                      <p id="14" class="info" style="height: :800px"><strong>Throwball</strong>
+
+                                      </p>
+                                      <p class="subtitle" onclick="show15()">Gully Cricket</p>
+                                      <p id="15" class="info" style="height: :800px"><strong>Gully Cricket</strong>
+
+                                      </p>
                                   </div>
                               </div>
                           </div>
@@ -179,11 +266,30 @@ var x = setInterval(function() {
                               <div class="team boxed-grey" style="background: rgba(0,0,0,0)">
                                   <div class="inner">
                                       <h5>Cultural Events</h5>
-                                      <p class="subtitle">Rangoli</p>
-                                      <p class="subtitle">Solo Dance</p>
-                                      <p class="subtitle">Solo Singing</p>
-                                      <p class="subtitle">Nail Art</p>
-                                      <p class="subtitle">Poster Making</p>
+                                      <p class="subtitle" onclick="show16()">Rangoli</p>
+                                      <p id="16" class="info" style="height: :800px"><strong>Rangoli</strong>
+
+                                      </p>
+                                      <p class="subtitle" onclick="show17()">Solo Dance</p>
+                                      <p id="17" class="info" style="height: :800px"><strong>Solo Dance</strong>
+
+                                      </p>
+                                      <p class="subtitle" onclick="show18()">Solo Singing</p>
+                                      <p id="18" class="info" style="height: :800px"><strong>Solo Singing</strong>
+                                      <br>
+                                      1. Time allocated for each performance is ------- minutes.
+2. The participant will not be allowed to refer to the lyrics while singing.
+3. The performance will be judged on the song selection,voice clarity, quality and rhythm.
+4. The performers should bring own instruments if required for the performance.
+                                      </p>
+                                      <p class="subtitle" onclick="show19()">Nail Art</p>
+                                      <p id="19" class="info" style="height: :800px"><strong>Nail Art</strong>
+                                      
+                                      </p>
+                                      <p class="subtitle" onclick="show20()">Poster Making</p>
+                                      <p id="20" class="info" style="height: :800px"><strong>Poster Making</strong>
+                                      
+                                      </p>
                                   </div>
                               </div>
                           </div>
@@ -247,6 +353,21 @@ var x = setInterval(function() {
     <div class="container">
       <div class="row">
         <div class="col-md-12 col-lg-12">
+<script>
+function showdev()
+{
+var a=document.getElementById("dev");
+a.style.display=("block");
+var b=document.getElementById("mtd");
+b.style.display=("none");
+}
+</script>
+          <button id="mtd" class="btn-lg" onclick="showdev()">Meet The Developers</button>
+	  <p style="display:none;" id="dev">
+		<a href="http://quora.com/profile/Shubham-Baid-2"><img src="img/dev1.jpg" style="border-radius:90px; height:100px; width:100px;"></a>
+		<a href="http://codclan.website/pfshiv/index.html"><img src="img/dev2.jpeg" style="border-radius:90px; height:100px; width:100px;"></a>
+	  </p>
+
           <div class="wow shake" data-wow-delay="0.4s">
             <div class="page-scroll marginbot-30">
               <a href="#intro" id="totop" class="btn btn-circle">
@@ -272,6 +393,7 @@ var x = setInterval(function() {
   <!-- Custom Theme JavaScript -->
   <script src="js/custom.js"></script>
   <script src="contactform/contactform.js"></script>
+
 
 </body>
 

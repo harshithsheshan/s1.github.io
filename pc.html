@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -10,7 +10,7 @@
   <title>SAVISKARA '18</title>
 
   <!-- Bootstrap Core CSS -->
-  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
 
   <!-- Fonts -->
   <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -19,11 +19,35 @@
   <link href="css/style.css" rel="stylesheet">
   <link href="color/default.css" rel="stylesheet">
 
+    <style>
+        .info {
+            position: relative;
+            margin-left:160px;
+            z-index: 2;
+            background: #FF9900;
+            color: #FFF;
+            font-size: 16px;
+            width: 80%;
+            height: 200px;
+            border-radius: 5px;
+        }
+        .infor {
+            position: relative;
+            margin-left:-100px;
+            z-index: 2;
+            background: #FF9900;
+            color: #FFF;
+            font-size: 16px;
+            width: 80%;
+            height: 200px;
+            border-radius: 5px;
+        }
+    </style>
 
 
 </head>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+<body id="page-top" data-spy="scroll" data-target=".navbar-custom" onload="hideve()">
   <!-- Preloader -->
   <div id="preloader">
     <div id="load"></div>
@@ -45,7 +69,7 @@
         <ul class="nav navbar-nav">
           <li class="active"><a href="#intro">Home</a></li>
           <li><a href="#about">Events</a></li>
-          <li><a href="#contact">Registration</a></li>
+          <li><a href="#contact">Contact Us</a></li>
         </ul>
       </div>
       <!-- /.navbar-collapse -->
@@ -101,6 +125,8 @@ var x = setInterval(function() {
   </section>
   <!-- /Section: intro -->
 
+    <script src="sdgfdsgasf.js"></script>
+
   <!-- Section: about -->
   <section id="about" class="home-section text-center" style="color :#FFF; background-image: url('img/1_zQCFvxQQs4YUHYsaOuU6yg.jpeg'); background-position: fixed;">
     <div class="heading-about">
@@ -124,6 +150,7 @@ var x = setInterval(function() {
           <hr class="marginbot-50">
         </div>
       </div>
+
 <div class="row">
   <center>
     <div style="width: 75%; font-family: 'comic sans ms'; font-size: 45px;" class="col-lg-2">9th March</div>
@@ -136,12 +163,31 @@ var x = setInterval(function() {
             <div class="team boxed-grey" style="background: rgba(0,0,0,0)">
               <div class="inner">
                 <h5>Technical Events</h5>
-                <p class="subtitle">Mini Hackathon</p>
-                <p class="subtitle">Tech Quiz</p>
-                <p class="subtitle">Ideate</p>
-                <p class="subtitle">Paper Presentation</p>
-                <p class="subtitle">Jumble Code</p>
-                </div>
+                  <p class="subtitle" onmouseover="show1()" onmouseout="hideve()">Mini Hackathon</p>
+                  <p class="subtitle" onmouseover="show2()" onmouseout="hideve()">Tech Quiz</p>
+                  <p class="subtitle" onmouseover="show3()" onmouseout="hideve()">Ideate</p>
+                  <p class="subtitle" onmouseover="show4()" onmouseout="hideve()">Paper Presentation</p>
+                  <p class="subtitle" onmouseover="show5()" onmouseout="hideve()">Jumble Code</p>
+                  <p id="1" class="info" style="margin-top:-170px;">
+                      <strong>Mini Hackathon</strong>
+
+                  </p>
+                  <p id="2" class="info" style="margin-top:-170px;">
+                      <strong>Tech Quiz</strong>
+
+                  </p>
+                  <p id="3" class="info" style="margin-top:-170px;">
+                      <strong>Ideate</strong>
+
+                  </p>
+                  <p id="4" class="info" style="margin-top:-170px;">
+                      <strong>Paper Presentation</strong>
+
+                  </p>
+                  <p id="5" class="info" style="margin-top:-170px;">
+                      <strong>Jumble Code</strong>
+
+                  </p>                </div>
             </div>
           </div>
         </div>
@@ -150,11 +196,32 @@ var x = setInterval(function() {
             <div class="team boxed-grey" style="background: rgba(0,0,0,0)">
               <div class="inner">
                 <h5>Recreational Events</h5>
-                <p class="subtitle">Counter Strike</p>
-                <p class="subtitle">Need For Speed</p>
-                <p class="subtitle">Mini Militia</p>
-                <p class="subtitle">Hogathon</p>
-                <p class="subtitle">Online Photography</p>
+                  <p class="subtitle" onmouseover="show6()" onmouseout="hideve()">Counter Strike</p>
+                  <p class="subtitle" onmouseover="show7()" onmouseout="hideve()">Need For Speed</p>
+                  <p class="subtitle" onmouseover="show8()" onmouseout="hideve()">Mini Militia</p>
+                  <p class="subtitle" onmouseover="show9()" onmouseout="hideve()">Hogathon</p>
+                  <p class="subtitle" onmouseover="show10()" onmouseout="hideve()">Online Photography</p>
+                  <p id="6" class="info" style="margin-top:-170px;">
+                      <strong>Counter Strike</strong>
+
+                  </p>
+                  <p id="7" class="info" style="margin-top:-170px;">
+                      <strong>Need For Speed</strong>
+
+                  </p>
+                  <p id="8" class="info" style="margin-top:-170px;">
+                      <strong>Mini Militia</strong>
+
+                  </p>
+
+                  <p id="9" class="info" style="margin-top:-170px;">
+                      <strong>Hogathon</strong>
+
+                  </p>
+                  <p id="10" class="info" style="margin-top:-170px;">
+                      <strong>Online Photography</strong>
+
+                  </p>
               </div>
             </div>
           </div>
@@ -164,11 +231,32 @@ var x = setInterval(function() {
             <div class="team boxed-grey" style="background: rgba(0,0,0,0)">
               <div class="inner">
                 <h5>Sports</h5>
-                <p class="subtitle">Tug Of War</p>
-                <p class="subtitle">Slow Bike Race</p>
-                <p class="subtitle">Volleyball</p>
-                <p class="subtitle">Throwball</p>
-                <p class="subtitle">Gully Cricket</p>
+                  <p class="subtitle" onmouseover="show11()" onmouseout="hideve()">Tug Of War</p>
+                  <p class="subtitle" onmouseover="show12()" onmouseout="hideve()">Slow Bike Race</p>
+                  <p class="subtitle" onmouseover="show13()" onmouseout="hideve()">Volleyball</p>
+                  <p class="subtitle" onmouseover="show14()" onmouseout="hideve()">Throwball</p>
+                  <p class="subtitle" onmouseover="show15()" onmouseout="hideve()">Gully Cricket</p>
+                  <p id="11" class="info" style="margin-top:-170px;">
+                      <strong>Tug Of War</strong>
+
+                  </p>
+                  <p id="12" class="info" style="margin-top:-170px;">
+                      <strong>Slow Bike Race</strong>
+
+                  </p>
+
+                  <p id="13" class="info" style="margin-top:-170px;">
+                      <strong>Volleyball</strong>
+
+                  </p>
+                  <p id="14" class="info" style="margin-top:-170px;">
+                      <strong>Throwball</strong>
+
+                  </p>
+                  <p id="15" class="info" style="margin-top:-170px;">
+                      <strong>Gully Cricket</strong>
+
+                  </p>
               </div>
             </div>
           </div>
@@ -178,11 +266,32 @@ var x = setInterval(function() {
             <div class="team boxed-grey" style="background: rgba(0,0,0,0)">
               <div class="inner">
                 <h5>Cultural Events</h5>
-                <p class="subtitle">Rangoli</p>
-                <p class="subtitle">Solo Dance</p>
-                <p class="subtitle">Solo Singing</p>
-                <p class="subtitle">Nail Art</p>
-                <p class="subtitle">Poster Making</p>
+                  <p class="subtitle" onmouseover="show16()" onmouseout="hideve()">Rangoli</p>
+                  <p class="subtitle" onmouseover="show17()" onmouseout="hideve()">Solo Dance</p>
+                  <p class="subtitle" onmouseover="show18()" onmouseout="hideve()">Solo Singing</p>
+                  <p class="subtitle" onmouseover="show19()" onmouseout="hideve()">Nail Art</p>
+                  <p class="subtitle" onmouseover="show20()" onmouseout="hideve()">Poster Making</p>
+                  <p id="16" class="infor" style="margin-top:-170px;">
+                      <strong>Rangoli</strong>
+
+                  </p>
+
+                  <p id="17" class="infor" style="margin-top:-170px;">
+                      <strong>Solo Dance</strong>
+
+                  </p>
+                  <p id="18" class="infor" style="margin-top:-170px;">
+                      <strong>Solo Singing</strong>
+
+                  </p>
+                  <p id="19" class="infor" style="margin-top:-170px;">
+                      <strong>Nail Art</strong>
+
+                  </p>
+                  <p id="20" class="infor" style="margin-top:-170px;">
+                      <strong>Poster Making</strong>
+
+                  </p>
               </div>
             </div>
           </div>
@@ -198,7 +307,7 @@ var x = setInterval(function() {
           <div class="col-lg-8 col-lg-offset-2">
             <div class="wow bounceInDown" data-wow-delay="0.4s">
               <div class="section-heading">
-                <h2>Registrations</h2>
+                <h2>Contact Us</h2>
                 <i class="fa fa-2x fa-angle-down"></i>
 
               </div>
@@ -244,6 +353,22 @@ var x = setInterval(function() {
     <div class="container">
       <div class="row">
         <div class="col-md-12 col-lg-12">
+
+          <p>&copy;RACIT. All rights reserved.</p>
+<script>
+function showdev()
+{
+var a=document.getElementById("dev");
+a.style.display=("block");
+var b=document.getElementById("mtd");
+b.style.display=("none");
+}
+</script>
+          <button id="mtd" class="btn-lg" onclick="showdev()">Meet The Developers</button>
+	  <p style="display:none;" id="dev">
+		<a href="http://quora.com/profile/Shubham-Baid-2"><img src="img/dev1.jpg" style="border-radius:90px; height:100px; width:100px;"></a>
+		<a href="http://codclan.website/pfshiv/index.html"><img src="img/dev2.jpeg" style="border-radius:90px; height:100px; width:100px;"></a>
+	  </p>
           <div class="wow shake" data-wow-delay="0.4s">
             <div class="page-scroll marginbot-30">
               <a href="#intro" id="totop" class="btn btn-circle">
@@ -251,7 +376,6 @@ var x = setInterval(function() {
 						</a>
             </div>
           </div>
-          <p>&copy;RACIT. All rights reserved.</p>
           <div class="credits">
 
           </div>
